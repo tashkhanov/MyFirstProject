@@ -1,0 +1,1793 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.home-line{
+    height: 5px;
+    background-color: rgb(0, 223, 167);
+    width: 100%;
+}
+
+.home-header{
+    min-height: 9vh;
+    background-color: white;
+    color: rgb(68, 68, 68);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 300px 0 300px; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.home-header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 60%;
+    height: 100%;
+}
+
+.home-header-left h1{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.home-header-left h1:hover{
+    /* transform: rotate(360deg); */
+    transform: scale(1.2);
+}
+
+.home-header-left ul{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     list-style: none;
+     width: 80%;
+     height: 100%;
+     font-family: "Rubik", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     /* border: 1px solid red; */
+     margin-left: 170px;
+}
+
+.home-header-left ul li{
+    cursor: pointer;
+}
+
+.home-buttons{
+    height: 100%;
+}
+
+.navg-buttons{
+    /* border: 1px solid red; */
+    height: 86px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.navg-buttons:hover{
+    background-color: rgb(0, 223, 167);
+    color: white;
+}
+
+.home-header-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 12%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(0, 223, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.home-icon:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px 1px rgb(0, 223, 167);
+}
+
+.home-icon i{
+    color: white;
+}
+
+.navg-buttons:nth-child(1){
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 223, 167);
+    color: white;
+}
+
+.home-center{
+    background-image: url(Home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+}
+
+.home-text button{
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.home-text button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    z-index: -1;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.home-text button:hover::before{
+    transform: translateX(0);
+}
+
+.home-text button:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+.home-text button:hover{
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 0 0 20px 1px rgb(0, 225, 255);
+}
+
+.home-text h1{
+    font-size: 40px;
+    width: 60%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.home-text p{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.home-text{
+    width: 33%;
+    margin-left: 300px;
+}
+
+
+/* Blocks */
+
+.blocks{
+    width: 70%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    padding-top: 100px;
+}
+
+.blocks-border{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block{
+    /* margin: 100px 0; */
+    width: 24%;
+    padding: 80px 50px;
+    border: 1px solid rgba(65, 65, 65, 0.116);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.block:hover{
+    transform: scale(1.05);
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px 5px rgb(219, 219, 219);
+    border-radius: 5px;
+}
+
+.block h1{
+    margin: 20px 0;
+    font-size: 25px;
+    color: rgb(56, 56, 56);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.block-numbers{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(3, 3, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.block:hover .block-numbers{
+    transform: rotate(360deg);
+    /* box-shadow: 0 0 15px 3px rgb(3, 3, 182); */
+    box-shadow: 0 0 15px 3px rgb(0, 223, 167);
+    background-color: rgb(0, 223, 167);
+}
+
+.block p{
+    font-size: 15px;
+    color: gray;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.block-numbers h5{
+    font-size: 25px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Sign */
+
+
+.sign{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.sign-left{
+    width: 50%;
+}
+
+.left-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.icon-border{
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 223, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.info:hover .icon-border{
+    transform: rotate(30deg);
+    box-shadow: 0 0 15px 3px rgb(0, 223, 167);
+}
+
+.icon-border i{
+    font-size: 23px;
+    color: white;
+}
+
+.sign-lefth1 h1{
+    font-size: 30px;
+    color: rgb(56, 56, 56);
+    width: 90%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.info-text h1{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(56, 56, 56);
+}
+
+.info-text p{
+    color: rgb(56, 56, 56);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.sign-right{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.4s;
+}
+
+.sign-right:hover{
+    box-shadow: 0 0 20px 10px rgb(0, 0, 0);
+}
+
+.sign-right h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sign-right form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 220px;
+}
+
+.sign-right form input{
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding-left: 15px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.sign-right form button{
+    padding: 17px 35px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 30px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sign-right form button:hover{
+    transform: scale(1.05);
+    background-color: rgb(0, 223, 167);
+    color: white;
+    box-shadow: 0 0 10px 2px rgb(0, 223, 167);
+}
+
+.sign-right form input::placeholder{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Teachers */
+
+
+.teachers-card-info img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    /* background-color: rgb(238, 237, 237); */
+    transition: 0.3s;
+}
+
+.teacher-image{
+    overflow: hidden;
+    position: relative;
+    height: 315px;
+}
+
+.teacher-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.teachers{
+    background-color: rgb(248, 248, 248);
+    padding: 100px 0;
+}
+
+.teachers-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.teachers-header h1{
+    font-size: 30px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(56, 56, 56);
+}
+
+.teachers-header p{
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(105, 105, 105);
+}
+
+.teachers-cards{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teachers-card{
+    width: 23%;
+    background-color: white;
+    transition: 0.3s;
+    height: 470px;
+    /* border: 1px solid red; */
+}
+
+.teachers-card:hover img{
+    transform: scale(1.1);
+    /* filter: drop-shadow(1px 1px 10px rgb(0, 0, 0)); */
+    filter: drop-shadow(1px 1px 10px rgb(0, 223, 167));
+}
+
+.teachers-card:hover{
+    transform: translateY(-30px);
+    /* box-shadow: 0 0 10px 5px rgb(219, 219, 219); */
+    box-shadow: 0 0 15px 1px rgb(0, 223, 167);
+    cursor: pointer;
+}
+
+.teacher-like{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    opacity: 0;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.teachers-card:hover .teacher-like{
+    opacity: 1;
+}
+
+.teachers-card-text{
+    padding: 20px;
+    /* padding: 20px 0 0 20px; */
+    border-bottom: 1px solid rgba(134, 134, 134, 0.288);
+    height: 65px;
+}
+
+.teachers-card-text h1{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(56, 56, 56);
+}
+
+.teachers-card-text p{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(56, 56, 56);
+    margin-top: 6px;
+}
+
+.teachers-card-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 35%;
+    height: 70px;
+}
+
+.teachers-card-icons i{
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 60px;
+}
+
+.teachers-card-icons i:hover{
+    transform: scale(1.5);
+}
+
+.teachers-cards .teachers-card:nth-child(2) .teachers-card-icons{
+    width: 20%;
+}
+
+
+/* Courses */
+
+
+.courses{
+    padding: 100px 0;
+}
+
+.courses-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.courses-header h1{
+    font-size: 30px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(56, 56, 56);
+}
+
+.courses-header p{
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(105, 105, 105);
+}
+
+.courses-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0)); */
+    transition: 0.3s;
+}
+
+.courses-card-image{
+    height: 235px;
+    position: relative;
+    overflow: hidden;
+}
+
+.courses-image-text{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    color: white;
+    z-index: 2;
+}
+
+.courses-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94px;
+}
+
+.courses-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72px;
+}
+
+.courses-cards{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses-card{
+    width: 31%;
+    background-color: rgb(245, 245, 245);
+    transition: 0.3s;
+    height: 470px;
+}
+
+.courses-card:hover .courses-card-image img{
+    transform: scale(1.1);
+}
+
+.courses-card:hover{
+    box-shadow: 0 0 10px 5px rgb(219, 219, 219);
+}
+
+.courses-card-footer-left img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(243, 243, 243);
+    object-fit: cover;
+}
+
+.courses-card-text{
+    padding: 30px 0 0 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+    height: 125px;
+}
+
+.courses-card-text h1{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(56, 56, 56);
+}
+
+.courses-card-text p{
+    width: 80%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(105, 105, 105);
+    margin-top: 10px;
+}
+
+.courses-card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    height: 110px;
+}
+
+.courses-card-footer-left{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.courses-card-footer-left h1{
+    margin-left: 30px;
+}
+
+.courses-card-footer-right{
+    background-color: rgb(0, 223, 167);
+    border-radius: 3px;
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.courses-card-footer-right:hover{
+    transform: scale(1.15);
+}
+
+.courses-cards .courses-card:nth-child(2) .courses-card-footer-right{
+    width: 50px;
+    height: 30px;
+    background-color: rgba(0, 0, 248, 0.788);
+    color: white;
+}
+
+.courses-card-footer h1{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(56, 56, 56);
+    font-size: 18px;
+}
+
+.courses-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.courses-icon{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(128, 128, 128, 0.397);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.courses-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+}
+
+.courses-icon i{
+    color: white;
+    font-size: 12px;
+}
+
+
+/* Student */
+
+
+.student{
+    padding: 100px 0;
+    background-color: rgb(247, 247, 247);
+}
+
+.student-card-header-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.student-card-header-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: rgb(240, 240, 240);
+}
+
+.student-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.student-header h1{
+    font-size: 30px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(56, 56, 56);
+}
+
+.student-header p{
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(56, 56, 56);
+}
+
+.student-cards{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.student-card{
+    min-width: 24%;
+    padding: 80px 50px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.student-card:hover{
+    box-shadow: 0 0 10px 5px rgb(219, 219, 219);
+    transform: scale(1.04);
+}
+
+.student-card-header{
+    display: flex;
+    align-items: center;
+}
+
+.student-card-header-text{
+    margin-left: 20px;
+}
+
+.student-card-center p{
+    font-size: 17px;
+    margin: 20px 0;
+    color: rgb(105, 105, 105);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.student-card-header-text h1{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(56, 56, 56);
+}
+
+.student-card-header-text p{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(105, 105, 105);
+}
+
+.student-card-footer i{
+    color: rgba(0, 0, 196, 0.829);
+    font-size: 13px;
+}
+
+.student-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.student-cycles{
+    display: flex;
+    justify-content: space-between;
+    width: 30px;
+}
+
+.student-cycle1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(182, 182, 182, 0.671);
+    cursor: pointer;
+}
+
+.student-cycle2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(104, 104, 104);
+    cursor: pointer;
+}
+
+
+/* Contact */
+
+.contact{
+    padding: 100px 0;
+    background-color: rgba(0, 11, 168, 0.726);
+}
+
+.contact img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-center{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.contact-left form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right{
+    width: 48%;
+    height: 100%;
+}
+
+.contact-left{
+    width: 45%;
+    height: 100%;
+}
+
+.contact-left form input:nth-child(1){
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    margin-top: 40px;
+    outline: none;
+}
+
+.contact-left form input:nth-child(2){
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    padding-left: 10px;
+    outline: none;
+}
+
+/* .contact-left form input:nth-child(3){
+    height: 150px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: flex;
+} */
+
+.contact-left form textarea{
+    height: 150px;
+    outline: none;
+    padding: 10px 0 0 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.contact-left form input:nth-child(3)::placeholder{
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+}
+
+.form-button button{
+    padding: 20px 40px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: rgb(80, 80, 80);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-button button:hover{
+    box-shadow: 0 0 15px 3px rgb(0, 223, 167);
+    transform: scale(1.1)
+}
+
+.contact-left h1{
+    font-size: 30px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.contact-left p{
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+
+
+/* Head */
+
+
+.head{
+    padding: 100px 0;
+    background-color: rgb(34, 34, 34);
+}
+
+.head-texts{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}   
+
+.head-grid{
+    display: flex;
+    justify-content: space-between;
+    width: 57%;
+}
+
+.head-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin: 30px 10px;
+}
+
+.head-icons i{
+    color: rgb(0, 223, 167);
+    cursor: pointer;
+}
+
+.head p{
+    margin: 7px 0;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(105, 105, 105);
+}
+
+.head h1{
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 15px 0;
+    margin-top: 50px;
+}
+
+.center-p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.head-right form input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.219);
+    padding-left: 10px;
+    color: white;
+}
+
+.head-right form button{
+    padding: 17px 60px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.head-right form button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 1px white;
+}
+
+.head-right p{
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+
+/* Small 576px */
+
+@media screen and (max-width: 576px){
+
+    /* Home */
+
+    .home-line{
+        width: 100%;
+    }
+
+    .home-header{
+        padding: 0 0 0 20px;
+        /* border: 1px solid blue; */
+        width: 100%;
+    }
+
+    .home-header-left ul{
+        /* margin-right: 50px; */
+        /* border: 1px solid red; */
+        width: 30%;
+        margin-left: 140px;
+    }
+
+    .home-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+    .navg-buttons{
+        height: 70px;
+        width: 100px;
+        /* border: 1px solid black; */
+        margin-right: 150px;
+    }
+
+    .home-header-right{
+        width: 35%;
+        margin-bottom: 350px;
+        margin-right: 30px;
+        /* border: 1px solid red; */
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .home-header-right p{
+        margin-left: 10px;
+    }
+
+    .home-icon{
+        width: 33px;
+        height: 33px;
+        font-size: 13px;
+    }
+
+    .home-header-left h1{
+        margin-bottom: 350px;
+    }
+
+    .home-header-left{
+        width: 30%;
+    }
+
+    .home-text{
+        margin-left: 100px;
+        width: 70%;
+    }
+
+    .home-text h1{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .home-text p{
+        font-size: 13px;
+    }
+
+    .home-text button{
+        padding: 13px 20px;
+    }
+
+    /* Blocks */
+
+    .sign{
+        flex-direction: column;
+    }
+
+    .block{
+        width: 24%;
+    }
+
+    .sign-right{
+        margin-top: 40px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .blocks-border{
+        flex-direction: column;
+    }
+
+    .blocks-border .block{
+        margin: 0 auto 30px auto;
+        width: 80%;
+    }
+    
+    .sign-left{
+        width: 100%;
+    }
+
+    .info-text{
+        /* border: 1px solid blue; */
+        margin-left: 20px;
+    }
+
+    /* Teachers */
+
+    .teachers-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        width: 90%;
+    }
+
+    .teachers-card{
+        width: 100%;
+    }
+
+    /* Courses */
+
+    .courses-cards{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .courses-card{
+        width: 100%;
+    }
+
+    .courses-footer{
+        display: none;
+    }
+
+    .courses-image-text{
+        width: 100%;
+    }
+
+    .courses-right{
+        margin-right: 40px;
+    }
+
+    .courses-card-footer h1{
+        margin-left: 15px;
+    }
+
+    /* Student */
+
+    .student-cards{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .student-card{
+        width: 75%;
+        padding: 50px 50px;
+    }
+
+    .student-card p{
+        font-size: 15px;
+    }
+
+    .student-footer{
+        display: none;
+    }
+
+    /* Contact */
+
+    .contact{
+        padding: 100px 0 480px 0;
+    }
+
+    .contact-center{
+        flex-direction: column;
+    }
+
+    .contact-left{
+        width: 100%;
+    }
+
+    .contact-right{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    /* Head */
+
+    .head-texts{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .head-center{
+        margin-left: 20px;
+    }
+
+    .head-right form button{
+        padding: 15px 30px;
+    }
+
+    .head-grid{
+        flex-direction: column;
+    }
+
+    .head-center{
+        margin: 0;
+    }
+}
+
+
+/* Medium 768 */
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+
+    /* Home */
+
+    .home-header{
+        /* padding: 0 0 0 40px; */
+        width: 100%;
+        /* border: 1px solid red; */
+        /* padding-left: 30px; */
+    }
+
+    .home-header h1{
+        margin-left: 40px;  
+    }
+
+    .home-header-left ul{
+        margin-left: 100px;
+    }
+
+    .home-buttons{
+        flex-direction: column;
+    }
+
+    .home-header h1{
+        margin-bottom: 430px;
+    }
+
+    .home-header-right{
+        width: 150px;
+        margin-bottom: 430px;
+        /* border: 1px solid red; */
+        font-size: 15px;
+        /* width: 23%; */
+        margin-right: 50px;
+        justify-content: center;
+    }
+
+    .home-header-right p{
+        margin-left: 10px;
+    }
+
+    .home-icon{
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .home-text{
+        width: 100%;
+        margin-left: 130px;
+    }
+
+    /* Blocks */
+
+    .blocks-border{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .block{
+        width: 80%;
+    }
+
+
+    /* Sign */
+
+    .sign{
+        flex-direction: column;
+    }
+
+    .sign-left{
+        width: 100%;
+    }
+
+    .info-text{
+        margin-left: 30px;
+    }
+
+    .sign-right{
+        margin-top: 50px;
+    }
+
+    /* Teachers */
+
+    .teachers-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
+
+    .teachers-card{
+        width: 100%;
+    }
+    
+    /* Courses */
+
+    .courses-cards{
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .courses-card{
+        width: 100%;
+    }
+
+    .courses-image-text{
+        width: 100%;
+    }
+
+    .courses-right{
+        margin-right: 40px;
+    }
+
+    .courses-footer{
+        display: none;
+    }
+
+    .courses-card-text{
+        height: 115px;
+    }
+
+    /* Student */
+
+    .student-cards{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .student-card{
+        width: 80%;
+    }
+
+    .student-footer{
+        display: none;
+    }
+
+    /* Contact */
+
+    .contact{
+        padding: 100px 0 520px 0;
+    }
+
+    .contact-center{
+        flex-direction: column;
+    }
+
+    .contact-left{
+        width: 100%;
+    }
+
+    .contact-right{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    /* Head */
+
+    .head-texts{
+        flex-direction: column;
+    }
+
+    .head-grid{
+        flex-direction: column;
+    }
+
+    .head-left{
+        width: 100%;
+        /* border: 1px solid red; */
+        margin-right: 130px;
+    }
+}
+
+
+/* Large 992px */
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    
+    /* Home */
+
+    .home-header{
+        padding: 0 0 0 50px;
+        width: 100%;
+    }
+
+    .home-text{
+        width: 100%;
+        margin-left: 150px;
+    }
+
+    .home-header-left ul{
+        margin-left: 140px;
+        flex-direction: column;
+    }
+
+    .home-header-left h1{
+        margin-bottom: 430px;
+    }
+
+    .home-header-right{
+        margin-bottom: 430px;
+        margin-right: 100px;
+        justify-content: center;
+    }
+
+    .home-header-right p{
+        margin-left: 10px;
+    }
+
+    .home-text p{
+        width: 60%;
+    }
+
+    /* Blocks */
+
+    .blocks{
+        width: 90%;
+    }
+
+    .blocks-border{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+    }
+
+    .block{
+        width: 75%;
+    }
+
+    /* Sign */
+
+    .sign{
+        width: 90%;
+        padding-top: 200px;
+    }
+
+    .info-text{
+        margin-left: 20px;
+    }
+
+    .sign-right{
+        width: 370px;
+        height: 370px;
+        margin-top: 40px;
+    }
+
+    .sign-right h1{
+        font-size: 20px;
+    }
+
+    .sign-right form button{
+        padding: 15px 25px;
+    }
+
+    .sign-right form input{
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .sign-left{
+        position: relative;
+    }
+
+    .sign-lefth1{
+        position: absolute;
+        left: 50px;
+        top: -100px;
+        width: 650px;
+        text-align: center;
+        /* border: 1px solid red; */
+    }
+
+    /* Teachers */
+
+    .teachers-cards{
+        width: 90%;
+    }
+
+    /* Courses */
+
+    .courses-cards{
+        width: 90%;
+    }
+
+    .courses-card-footer-left h1{
+        margin-left: 15px;
+    }
+
+    .courses-image-text{
+        width: 100%;
+    }
+
+    .courses-right{
+        margin-right: 40px;
+    }
+
+    /* Student */
+
+    .student-cards{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+
+    .student-card{
+        width: 77%;
+    }
+
+    .student-footer{
+        display: none;
+    }
+
+    /* Contact */
+    
+    .contact-center{
+        width: 90%;
+    }
+
+    /* Head */
+
+    .head-texts{
+        width: 90%;
+        gap: 50px;
+    }
+
+    .head-right{
+        margin-left: 50px;
+    }
+
+    .head-center{
+        margin-left: 100px;
+    }
+}
+
+/* X Large */
+
+@media screen and (min-width: 993px) and (max-width: 1400px){
+
+    /* Home */
+
+    .home-header{
+        padding-left: 50px;
+        width: 100%;
+    }
+
+    .home-text{
+        width: 100%;
+        margin-left: 200px;
+    }
+
+    .home-header-left ul{
+        margin-left: 0;
+    }
+
+    .home-header-right{
+        margin-right: 80px;
+        font-size: 15px;
+    }
+
+    .home-header-right p{
+        margin-left: 10px;
+    }
+
+    .home-text h1{
+        width: 40%;
+    }
+
+    .home-text p{
+        width: 52%;
+    }
+
+    /* Blocks */
+
+    .blocks{
+        width: 90%;
+    }
+
+    .block{
+        width: 22%;
+    }
+
+    /* Sign */
+
+    .sign{
+        width: 90%;
+    }
+
+    .info-text{
+        margin-left: 20px;
+    }
+
+    /* Teachers */
+
+    .teachers-cards{
+        width: 90%;
+    }
+
+    /* Courses */
+
+    .courses-cards{
+        width: 90%;
+    }
+
+    .courses-image-text{
+        width: 100%;
+    }
+
+    .courses-right{
+        margin-right: 40px;
+    }
+
+    /* Student */
+
+    .student-cards{
+        width: 90%;
+    }
+
+    /* Contact */
+
+    .contact-center{
+        width: 90%;
+    }
+
+    /* Head */
+
+    .head-texts{
+        width: 90%;
+    }
+}
